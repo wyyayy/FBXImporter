@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXColor.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXGlobalSettings.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXImporter.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXMaterial.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXMatrix4x4.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXModel.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXScene.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXValue.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXVector2.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXVector3.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXVector4.cpp" />
+    <ClCompile Include="..\..\..\source\FBXImporter\FBXImporter_wrap.cxx">
+      <Filter>Generated</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXColor.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXGlobalSettings.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXImporter.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXImporterCommon.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXMaterial.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXMatrix4x4.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXModel.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXScene.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXValue.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXVector2.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXVector3.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\FBXVector4.h" />
+    <ClInclude Include="..\..\..\source\FBXImporter\RCPtr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{d825bfc0-d767-4c30-a61c-4c9a66daf2b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\source\FBXImporter\FBXImporter.i" />
+  </ItemGroup>
+</Project>
