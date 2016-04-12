@@ -20,6 +20,11 @@ It import fbx model just like you drag it into Unity, all the values in Transfor
 
 5. Copy them to TestModelImporter project or your own Unity project to test
 
+## License
+FBXImporter use a typical MIT license.
+Swig use GPL license, this project only use the tool swig.exe for build, no source included or binary linked, just like use gcc.exe.
+FBX SDK is a Autodesk product, see Autodesk_FBX_License.rtf for detail.
+
 ## Known issues
 1. Animation is not supported
 
