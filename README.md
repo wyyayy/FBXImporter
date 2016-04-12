@@ -3,8 +3,8 @@ FBXImporter is a Unity plugin to import fbx model into Unity at runtime.
 It import fbx model just like you drag it into Unity, all the values in Transform component, RenderFilter component and Renderer component should be the same as you import the fbx model at edit time.
 
 ## To use in Unity
-1. Copy TestModelImporter/Assets/Plugins/x86_64/FBXImporterUnmanaged.dll to /Assets/Plugins/x86_64 of your Unity project folder
-2. Copy TestModelImporter/Assets/Assembly/ModelImporter.dll to /Assets of your Unity project folder
+1. Copy TestModelImporter/Assets/Plugins/x86_64/FBXImporterUnmanaged.dll to /Assets/Plugins/x86_64
+2. Copy TestModelImporter/Assets/Assembly/ModelImporter.dll to /Assets
 3. Call ModelImporter.Importer.Import( fbxFilePath ) to import model
 
 ## To modify source and build
