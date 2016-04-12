@@ -4,7 +4,9 @@ It import fbx model just like you drag it into Unity, all the values in Transfor
 
 ## To use in Unity
 1. Copy TestModelImporter/Assets/Plugins/x86_64/FBXImporterUnmanaged.dll to /Assets/Plugins/x86_64
+
 2. Copy TestModelImporter/Assets/Assembly/ModelImporter.dll to /Assets
+
 3. Call ModelImporter.Importer.Import( fbxFilePath ) to import model
 
 ## To modify source and build
@@ -20,8 +22,11 @@ It import fbx model just like you drag it into Unity, all the values in Transfor
 
 ## Known issues
 1. Animation is not supported
+
 2. Calculation of normals and tangents is not supported, if there is no such data in fbx file
+
 2. Split large mesh is not supported yet
+
 3. Performance is not tested
 
 ## Thanks
