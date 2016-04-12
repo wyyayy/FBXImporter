@@ -25,4 +25,4 @@ Thanks Tristan ( CTO of Noitom Ltd ) give me permission to open this project<br 
 Thanks Tapani ( http://tapaniheikkinen.com/ ), helped me generate fbx samples to debug<br />
 
 ## Contact
-If there is any issues, please contact drvkize@gmail.com
+If there is any issue, please contact drvkize@gmail.com
