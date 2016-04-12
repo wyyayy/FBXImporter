@@ -30,8 +30,8 @@ It import fbx model just like you drag it into Unity, all the values in Transfor
 3. Performance is not tested
 
 ## Thanks
-Thanks Tristan ( CTO of Noitom Ltd ) give me permission to open this project<br />
-Thanks Tapani ( http://tapaniheikkinen.com/ ), helped me generate fbx samples to debug<br />
+Thanks Tristan ( CTO of Noitom Ltd ) for giving me permission to open this project<br />
+Thanks Tapani ( http://tapaniheikkinen.com/ ) who helped me generate fbx samples to debug<br />
 
 ## Contact
 If there is any issue, please contact drvkize@gmail.com
