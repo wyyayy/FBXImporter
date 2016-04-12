@@ -10,7 +10,7 @@ It import fbx model just like you drag it into Unity, all the values in Transfor
 3. Call ModelImporter.Importer.Import( fbxFilePath ) to import model
 
 ## To modify source and build
-1. The project using swig to wrap c++ interface to Unity, if your don't have it, download at http://www.swig.org/ and install it
+1. The project is using swig to wrap c++ interface to Unity, if your don't have it, download at http://www.swig.org/ and install it
 
 2. Open build/WindowsDesktop_vc140.sln, Open Property Page of swig interface file FBXImporter.i, change path under CustomBuildTool/CommandLine to your swig install path
 
