@@ -239,7 +239,7 @@ namespace FBXImporterUnmanaged
 		// import vertice element data
 		std::vector<int> indice;
 		int polygonCount = fbxMesh->GetPolygonCount();
-		indice.reserve( polygonCount * 3 );
+		indice.resize( polygonCount * 3 );
 		for( int iPolygon = 0; iPolygon < polygonCount; ++iPolygon )
 		{
 			int polygonVertexCount = 3;
