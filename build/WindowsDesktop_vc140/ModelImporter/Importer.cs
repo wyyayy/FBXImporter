@@ -333,9 +333,9 @@ namespace ModelImporter
 			GetPivotTransform( model, out pivotP, out pivotR, out pivotS );
 			GetTrasform( model, out modelP, out modelR, out modelS );
 			obj.transform.localPosition = (
-				FBXVector3ToUnityVector3( model.GetTranslation() ) +
-				FBXVector3ToUnityVector3( model.GetPivotRotation() ) +
-				FBXVector3ToUnityVector3( model.GetRotationOffset() ) -
+				FBXVector3ToUnityVector3( model.GetTranslation() ) -
+				//FBXVector3ToUnityVector3( model.GetPivotRotation() ) +
+				//FBXVector3ToUnityVector3( model.GetRotationOffset() ) -
 				parentScalePivot
 				) * unitScaleFactor;
 			obj.transform.localRotation = FBXVector3ToUnityQuaternion( model.GetPreRotation() ) * modelR * Quaternion.Inverse( FBXVector3ToUnityQuaternion( model.GetPostRotation() ) );
