@@ -74,7 +74,7 @@ namespace ModelImporter
 			scale = FBXVector3ToUnityVector3( model.GetPivotScale() );
 		}
 
-		static Mesh GetMesh( FBXModelPtr model, float scaleFactor, Vector3 rotationOffset )
+		static Mesh GetMesh( FBXModelPtr model, float scaleFactor )
 		{
 			if( model.GetVertexCount() <= 0 )
 			{
@@ -332,17 +332,33 @@ namespace ModelImporter
 
 			GetPivotTransform( model, out pivotP, out pivotR, out pivotS );
 			GetTrasform( model, out modelP, out modelR, out modelS );
-			obj.transform.localPosition = (
-				FBXVector3ToUnityVector3( model.GetTranslation() ) -
-				//FBXVector3ToUnityVector3( model.GetPivotRotation() ) +
-				//FBXVector3ToUnityVector3( model.GetRotationOffset() ) -
-				parentScalePivot
-				) * unitScaleFactor;
+            if( parent == null )
+            {
+                obj.transform.localPosition = (
+                FBXVector3ToUnityVector3(model.GetTranslation())
+                - parentScalePivot
+                ) * unitScaleFactor;
+            }
+            else
+            {
+                obj.transform.localPosition = (
+                FBXVector3ToUnityVector3(model.GetTranslation())
+                + FBXVector3ToUnityVector3(model.GetPivotRotation())
+                + FBXVector3ToUnityVector3(model.GetRotationOffset())
+                - parentScalePivot
+                ) * unitScaleFactor;
+            }
+			//obj.transform.localPosition = (
+			//	FBXVector3ToUnityVector3( model.GetTranslation() )
+   //             + FBXVector3ToUnityVector3( model.GetPivotRotation() )
+			//	+ FBXVector3ToUnityVector3( model.GetRotationOffset() )
+   //             - parentScalePivot
+			//	) * unitScaleFactor;
 			obj.transform.localRotation = FBXVector3ToUnityQuaternion( model.GetPreRotation() ) * modelR * Quaternion.Inverse( FBXVector3ToUnityQuaternion( model.GetPostRotation() ) );
 			obj.transform.localScale = modelS;
 
 			// set mesh
-			Mesh mesh = GetMesh( model, unitScaleFactor, FBXVector3ToUnityVector3( model.GetRotationOffset() ) );
+			Mesh mesh = GetMesh( model, unitScaleFactor );
 			if( mesh != null )
 			{
 				mesh.name = model.GetName();

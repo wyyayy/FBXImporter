@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelImporter", "ModelImpor
 		{559DA2E5-CD8D-4D63-9FAD-CEADDD32D5F3} = {559DA2E5-CD8D-4D63-9FAD-CEADDD32D5F3}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestUnmanaged", "TestUnmanaged\TestUnmanaged.vcxproj", "{75B5A957-46CF-4C0F-B7EC-2C602939D639}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,16 @@ Global
 		{AE2CD4B4-E556-4FEB-8B46-BF3ED34EEDC6}.Release|x64.Build.0 = Release|Any CPU
 		{AE2CD4B4-E556-4FEB-8B46-BF3ED34EEDC6}.Release|x86.ActiveCfg = Release|Any CPU
 		{AE2CD4B4-E556-4FEB-8B46-BF3ED34EEDC6}.Release|x86.Build.0 = Release|Any CPU
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Debug|x64.ActiveCfg = Debug|x64
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Debug|x64.Build.0 = Debug|x64
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Debug|x86.ActiveCfg = Debug|Win32
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Debug|x86.Build.0 = Debug|Win32
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Release|Any CPU.ActiveCfg = Release|Win32
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Release|x64.ActiveCfg = Release|x64
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Release|x64.Build.0 = Release|x64
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Release|x86.ActiveCfg = Release|Win32
+		{75B5A957-46CF-4C0F-B7EC-2C602939D639}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
