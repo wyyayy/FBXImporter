@@ -34,6 +34,8 @@ FBX SDK is a Autodesk product, see Autodesk_FBX_License.rtf for detail.
 
 3. Performance is not tested
 
+4. Some blender exported models are not imported correctly
+
 ## Thanks
 Thanks Tristan ( CTO of Noitom Ltd ) for giving me permission to make this project open source<br />
 Thanks Tapani ( http://tapaniheikkinen.com/ ) who helped me generate fbx samples to debug<br />
